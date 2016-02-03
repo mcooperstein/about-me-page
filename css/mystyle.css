@@ -1,0 +1,158 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    background-color: #ccffff;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1em;
+    color: #222222;
+}
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    color: red;
+}
+
+ul > li {
+    color: #660066;
+}
+
+ul {
+    font-weight: bold;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+    color: #ffffff;
+}
+
+.masthead {
+    padding: 6em 0;
+    background-image: url('http://i.imgur.com/e0YsuEN.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    border-top: solid 1em gray;
+    width: 100%;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 2px #000000;
+}
+
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.introduction-section,
+.location-section,
+.tidbits-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.social > p {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.social > li {
+    display: inline-block;
+    text-align: center;
+}
+
+.answer {
+    font-family: cursive;
+    color: gray;
+}
+
+.answer {
+    padding: 1.5em;
+}
+
+.introduction-section,
+.location-section,
+.tidbits-section,
+.content-footer {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.question {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+}
+
+
+/* Footer styles
+(all the styles inside the < footer > tag)
+*/
+
+.content-footer {
+    color: white;
+    background-color: gray;
+    margin-top: 5em;
+    padding: 4em 0;
+    text-align: center;
+}
+
+
+/* Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
